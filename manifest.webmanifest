@@ -1,0 +1,50 @@
+{
+ "id": "./",
+ "name": "Аудіоплеєр ХАРА ОМ",
+ "short_name": "Аудіоплеєр",
+ "description": "Аудіоплеєр з мітками та збереженням фрагментів у MP3",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#1a1b1d",
+ "theme_color": "#151618",
+ "lang": "uk",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ],
+ "file_handlers": [
+  {
+   "action": "./",
+   "accept": {
+    "audio/*": [
+     ".mp3",
+     ".m4a",
+     ".aac",
+     ".ogg",
+     ".opus",
+     ".wav",
+     ".flac",
+     ".amr"
+    ]
+   }
+  }
+ ],
+ "launch_handler": {
+  "client_mode": [
+   "focus-existing",
+   "auto"
+  ]
+ }
+}
