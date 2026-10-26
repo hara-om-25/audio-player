@@ -46,5 +46,28 @@
    "focus-existing",
    "auto"
   ]
+ },
+ "share_target": {
+  "action": "./?share-target",
+  "method": "POST",
+  "enctype": "multipart/form-data",
+  "params": {
+   "files": [
+    {
+     "name": "media",
+     "accept": [
+      "audio/*",
+      ".mp3",
+      ".m4a",
+      ".aac",
+      ".ogg",
+      ".opus",
+      ".wav",
+      ".flac",
+      ".amr"
+     ]
+    }
+   ]
+  }
  }
 }
